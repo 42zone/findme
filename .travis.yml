@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- node
+cache:
+  directories:
+    - node_modules
+script: 
+    - npm install -g serverless
+    - serverless deploy --stage dev >/dev/null 2>&1
+
